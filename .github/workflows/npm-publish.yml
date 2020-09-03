@@ -8,6 +8,15 @@ on:
     types: [created]
 
 jobs:
+  sleep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm run sleep
+
   build:
     runs-on: ubuntu-latest
     steps:

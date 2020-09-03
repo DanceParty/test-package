@@ -1,10 +1,11 @@
 {
   "name": "hello-github-package",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "sleep": "echo \"sleeping\" && sleep 180 && echo \"done sleeping\""
   },
   "keywords": [],
   "author": "",
